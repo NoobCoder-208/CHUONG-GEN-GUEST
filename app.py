@@ -546,7 +546,7 @@ def generate_accounts():
     # Get parameters
     name = request.args.get('name', 'CHUONG')
     count = request.args.get('count', '1')
-    region = request.args.get('region', 'IND')
+    region = request.args.get('region', 'VN')
 
     # Validate and convert count
     try:
