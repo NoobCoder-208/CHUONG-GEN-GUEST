@@ -126,10 +126,10 @@ def encrypt_api(plain_text):
 SUPERSCRIPT = "⁰¹²³⁴⁵⁶⁷⁸⁹"
 
 def generate_random_name(name_prefix):
-    """Generate name: prefix + random 4-digit superscript number (e.g., CHUONG¹⁶³⁹)"""
-    random_num = random.randint(0, 9999)
-    # Convert to 4-digit superscript
-    suffix = ''.join(SUPERSCRIPT[int(d)] for d in f"{random_num:04d}")
+    """Generate name: prefix + random 5-digit superscript number (e.g., CHUONG¹⁶³⁹⁰)"""
+    random_num = random.randint(0, 99999)
+    # Convert to 5-digit superscript
+    suffix = ''.join(SUPERSCRIPT[int(d)] for d in f"{random_num:05d}")
     return f"{name_prefix}{suffix}"
 
 def generate_custom_password():
