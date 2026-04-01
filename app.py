@@ -544,7 +544,7 @@ def GET_PAYLOAD_BY_DATA(JWT_TOKEN, NEW_ACCESS_TOKEN, date, response, status_code
 @app.route('/gen', methods=['GET'])
 def generate_accounts():
     # Get parameters
-    name = request.args.get('name', 'CHUONG')
+    name = request.args.get('name', 'CHメNG')
     count = request.args.get('count', '1')
     region = request.args.get('region', 'VN')
 
